@@ -61,9 +61,7 @@ from vllm.model_executor.weight_utils import (
     hf_model_weights_iterator,
 )
 from vllm.sequence import SamplerOutput
-
-# this model must need this dependency
-from hf_olmo import OLMoConfig
+from vllm.transformers_utils.configs.olmo import OLMoConfig
 
 KVCache = Tuple[torch.Tensor, torch.Tensor]
 
